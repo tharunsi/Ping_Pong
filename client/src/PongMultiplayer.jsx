@@ -2,16 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { io } from "socket.io-client";
 import "./PongGame.css";
 
-/*
-  PongGame.jsx
-  - Single-file React component for Pong
-  - No external image files required (SVG data-urls are embedded)
-  - Multiplayer connects to SERVER_URL (default localhost:3001)
-*/
+
 
 const SERVER_URL = import.meta.env.VITE_SERVER_URL || "http://localhost:3001";
 const WIDTH = 900; // canvas logical size
-const HEIGHT = 520;
+const HEIGHT = 400;
 const PADDLE_WIDTH = 20;
 const PADDLE_HEIGHT = 120;
 const BALL_RADIUS = 10;
